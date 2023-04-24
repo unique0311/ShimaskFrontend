@@ -167,6 +167,10 @@
   width: 400px;
 }
 
+.exchange__main__input input:focus {
+  outline: none;
+}
+
 .exchange__main__input input::placeholder {
   color: white;
   font-size: 20px;

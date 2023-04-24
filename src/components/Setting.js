@@ -1,16 +1,28 @@
 import { useState } from 'react';
 import './CSS/Setting.css';
-import { MembershipCard, CurrencyMain } from './Setting.component';
+import { MembershipCard, CurrencyMain, AuthenticationModal, ExitModal } from './Setting.component';
 
 import firstExchangeLogo from '../assets/dashboard/firstExchaneWallet.svg';
 import blueLogo from '../assets/dashboard/blueWallet.svg';
 import silverLogo from '../assets/dashboard/silverWallet.svg';
 import goldLogo from '../assets/dashboard/goldWallet.svg';
 import platinumLogo from '../assets/dashboard/platinumWallet.svg';
-
+import EthImage from '../assets/dashboard/ethereum.svg';
+import smaskImage from '../assets/dashboard/goldWallet.svg';
+import fromToImage from '../assets/dashboard/fromTo.svg';
+import EmailImage from '../assets/dashboard/emailSupport.svg';
+import ChatImage from '../assets/dashboard/chatWithSupport.svg';
+import TwitterImage from '../assets/dashboard/twitter.svg';
+import TelegramImage from '../assets/dashboard/telegram.svg';
+import MediumImage from '../assets/dashboard/medium.svg';
+import ToggleRightImage from '../assets/dashboard/toggleRight.svg';
+import InfoImage from '../assets/dashboard/info.svg';
+import ExitImage from '../assets/dashboard/exit.svg';
 
 const Setting = () => {
   const [selected, setSelected] = useState('membership');
+  const [modalShowAuthentication, setModalShowAuthentication] = useState(false)
+  const [modalShowExit, setModalShowExit] = useState(false);
 
   const renderSelected = () => {
     if (selected === 'membership') {
@@ -72,22 +84,104 @@ const Setting = () => {
     }
     else if (selected === 'buyShimask') {
       return (
-        <div className='setting__main__background'>Buy Shimask</div>
+        <div className='setting__main__background'>
+          <div className="setting__buyShimask__container">
+            <div className="buyShimask__detail__main">
+              <div className="buyShimask__detail__subMains">
+                <img src={EthImage} />
+                <h5>From</h5>
+                <div className='buyShimask__main__input'>
+                  <input placeholder='0' />
+                  <button className='buyShimask__button__setting'>
+                    <p>ETH</p>
+                  </button>
+                </div>
+              </div>
+              <img src={fromToImage} className="buyCryptoImage__setting"/>
+              <div className="buyShimask__detail__subMains">
+                <img src={smaskImage}/>
+                <h5>To</h5>
+                <div className='buyShimask__main__input'>
+                  <input placeholder='0' />
+                  <button className='buyShimask__button__setting'>
+                    <p>SMASK</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="buyCrypto__button__exchange">
+              <button>BUY SMASK</button>
+              <p>1 ETH = 500.000 SMASK</p>
+            </div>
+          </div>
+        </div>
       )
     }
     else if (selected === 'security') {
       return (
-        <div className='setting__main__background'>Security</div>        
+        <div className='setting__main__background'>
+          <div className='setting__security__container'>
+            <p>Before Changing your password, click Private Keys in top panel and write down your <br />12-word backup phrase. This will help you restore your wallet if you forget your new <br />password.</p>
+            <input placeholder='Old Password' type='password'/>
+            <input placeholder='New Password' type='password'/>
+            <input placeholder='Repeat New Password'type='password'/>
+            {/* <div className=''> */}
+              {/* <img /> */}
+              <p>Two-Factor Authentication</p>
+            {/* </div> */}
+            <button onClick={() => {setModalShowAuthentication(true)}}>CHANGE PASSWORD</button>
+          </div>
+          { modalShowAuthentication && <AuthenticationModal setIsOpen={setModalShowAuthentication}/>}
+        </div>        
       )
     }
     else if (selected === 'privateKeys') {
       return (
-        <div className='setting__main__background'>Private Keys</div>
+        <div className='setting__main__background'>
+          <div className='setting__privateKeys__container'>
+            <p>NEVER share your 12-word seed phrase and private keys with anyone, including on any <br/> web wallets, websites, or online forms. Otherwise, you may lose all your money!</p>
+            <input placeholder='Password' type='password'/>
+            <button>SHOW KEY</button>
+          </div>
+        </div>
       )
     }
     else if (selected === 'support') {
       return (
-        <div className='setting__main__background'>Support</div>
+        <div className='setting__main__background'>
+          <div className='setting__support__container'>
+            <h4>SMASK Wallet Support</h4>
+            <p>Update your wallet to the latest version</p>
+            <div className='support__card__container'>
+              <div className='card__detail__main'>
+                <img src={EmailImage}/>
+                <pp>Email</pp>
+                <pp>Support</pp>
+              </div>
+              <div className='card__detail__main'>
+                <img src={ChatImage}/>
+                <pp>Chat with</pp>
+                <pp>Support</pp>
+              </div>
+            </div>
+            <h5>Check our social media</h5>
+            <div className='support__social__container'>
+              <img src={TwitterImage}/>
+              <img src={TelegramImage}/>
+              <img src={MediumImage}/>
+            </div>
+            <div className='support__logCollection__container'>
+              <img src={ToggleRightImage}/>
+              <h5>Log collection</h5>
+              <img src={InfoImage}/>
+            </div>
+            <button onClick={() => setModalShowExit(true)}>
+              <img src={ExitImage} className='exit__button__setting'/>
+              <h7>Exit App</h7>
+            </button>
+          </div>
+          {modalShowExit && <ExitModal setIsOpen={setModalShowExit} />}
+        </div>
       )
     }
   }

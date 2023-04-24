@@ -9,6 +9,7 @@ import balance from '../assets/dashboard/balance.svg';
 import pendingWithdraw from '../assets/dashboard/pending.svg';
 import showAllImage from '../assets/dashboard/showAll.svg';
 import avatarImage from '../assets/dashboard/profile.svg';
+import MarketChartImage from '../assets/dashboard/MarketTrendChart.svg';
 import profileDownImage from '../assets/dashboard/profileDown.svg';
 
 
@@ -115,7 +116,8 @@ const DashboardMain = () => {
                 <div className='chart__filter'>
                   <TrendChartFilter />
                 </div>
-                Chart
+                {/* Chart */}
+                <img src={MarketChartImage} style = {{paddingTop: '30px'}}/>
               </div>
             </div>
           </div>
