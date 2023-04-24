@@ -96,3 +96,50 @@
   font-size: 12px;
   padding: 10px 30px;
 }
+
+.currency__main__container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 80px;
+  justify-content: space-between;
+  background: wheat;
+  border-radius: 25px;
+  margin-top: 120px;
+  align-items: center;
+}
+
+.currency__main__leftcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+.currency__main__leftcontainer h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 37px;
+  font-family: 'Ageo-Bold';
+}
+
+.currency__main__leftcontainer p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-family: 'Ageo-Medium';
+  color: #a06329;
+}
+
+.currency__main__rightcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  background: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.currency__main__rightcontainer img {
+  padding-right: 10px;
+}

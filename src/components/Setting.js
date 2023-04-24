@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './CSS/Setting.css';
-import { MembershipCard } from './Setting.component';
+import { MembershipCard, CurrencyMain } from './Setting.component';
 
 import firstExchangeLogo from '../assets/dashboard/firstExchaneWallet.svg';
 import blueLogo from '../assets/dashboard/blueWallet.svg';
@@ -65,7 +65,7 @@ const Setting = () => {
       return (
         <div className='setting__main__background'>
           <div className='setting__currency__container'>
-            sdfsdfsdf
+            <CurrencyMain />
           </div>
         </div>
       )
