@@ -1,0 +1,98 @@
+.memebership__card__container {
+  width: 200px;
+  height: 300px;
+  background: #120000;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.memebership__card__container img {
+  width: 80px;
+  position: absolute;
+  top: -20px;
+}
+
+.memebership__card__container p {
+  padding-top: 70px;
+  color: white;
+  font-size: 13px;
+  font-family: 'Ageo-Regular';
+}
+
+.memebership__card__container div {
+  background: #510000;
+  color: white;
+  font-size: 22px;
+  font-family: 'Ageo-Bold';
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;  
+}
+
+.memebership__card__container h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 13px;
+  font-family: 'Ageo-Regular';
+}
+
+.memebership__card__container h4 {
+  margin-top: 10px;
+  color: #ecb55c;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: 'Ageo-Regular';
+}
+
+.memebership__card__container button {
+  border: none;
+  background: linear-gradient(180deg, #d4a157  0%, #a06329 100%);
+  color: #3d100c;
+  font-size: 10px;
+  font-family: 'Ageo-Heavy';
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+.card__selected__setting {
+  width: 250px;
+  height: 350px;
+}
+
+.card__selected__setting img {
+  width: 90px;
+}
+
+.card__selected__setting p {
+  padding-top: 80px;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.card__selected__setting div {
+  font-size: 26px;
+}
+
+.card__selected__setting h5 {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.card__selected__setting h4 {
+  font-size: 15px;
+}
+
+.card__selected__setting button {
+  font-size: 12px;
+  padding: 10px 30px;
+}

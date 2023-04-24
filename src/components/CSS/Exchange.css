@@ -1,0 +1,396 @@
+.exchange__statue__bar {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(89.24deg, #7d0101 0%, #0a0002 100%);
+  box-shadow:  30 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.coin__price__chart {
+  width: 100%;
+  height: calc(100% - 100px);
+  margin-top: 25px;
+  background: linear-gradient(129.24deg, #d0353a 0%, #3d3551 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
+.price__chart__detail {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.addcoindandtoken__container {
+  /* margin-top: 50px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background: wheat; */
+}
+
+.save__change__setting {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  color: #3d100c;
+  font-size: 22px;
+  font-family: 'Ageo-Bold';
+  background: linear-gradient(149.24deg, #d9a65b 0%, #9f6329 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+.coininfo__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exchange__main__container {
+  width: 100%;
+  height: 100%;
+  /* background: wheat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exchangemain__main {
+  margin-top: 120px;
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  /* background: white; */
+}
+
+.exchangemain__button__container button {
+  width: 50%;
+  border: none;
+  border-radius: 25px 25px 0 0 ;
+}
+
+.transactions__detail__container {
+  width: 100%;
+  height: calc(100% - 70px);
+  background: linear-gradient(140deg, #da4c37 0%, #5a2f4f 100%);
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instantExchange__detail__container {
+  width: 100%;
+  height: calc(100% - 70px);
+  background: linear-gradient(63deg, #640001 0%, #0a0002 100%);
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactions__button__setting {
+  color: white;
+  font-size: 32px;
+  font-family: 'Ageo-Bold';
+  background: linear-gradient(30deg, #da4c37 0%, #b9273f 100%);
+}
+
+.instantExchange__button__setting {
+  color: white;
+  font-size: 32px;
+  font-family: 'Ageo-Bold';
+  background: linear-gradient(90deg, #2f0001 0%, #0a0002 100%);
+}
+
+.instantExchange__detail__exchangeMain {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+}
+
+.bothside__detail__main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.bothside__detail__main img {
+  width: 100px;
+  padding-left: 40px;
+}
+
+.bothside__detail__main h5 {
+  font-size: 23px;
+  font-family: 'Ageo-Bold';
+  color: #d9a65b;
+  padding-left: 20px;
+}
+
+.bothside__detail__main p {
+  font-size: 17px;
+  font-family: 'Ageo-Medium';
+  color: white;
+}
+
+.exchange__main__input {
+  border: none;
+  background: linear-gradient(90deg, #270000 0%, #070000 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  height: 65px;
+  position: relative;
+}
+
+.exchange__main__input input {
+  border: none;
+  background: none;
+  padding-left: 30px;
+  height: 50px;
+  width: 400px;
+}
+
+.exchange__main__input input::placeholder {
+  color: white;
+  font-size: 20px;
+  font-family: 'Ageo-Medium';
+}
+
+.input__button__setting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.input__button__setting p {
+  font-size: 27px;
+  font-family: 'Ageo-ExtraBold';
+  color: #380404;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dropdown__setting {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 65px;
+  background: linear-gradient(90deg, #270000 0%, #070000 100%);
+  border-radius: 0 0 10px 10px;
+  height: 150px;
+  width: 185px;
+  overflow: auto;
+}
+
+.changed__dropdown {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+.dropdown__button__Setting {
+  width: 100%;
+  border: none;
+  background: none;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown__button__Setting img {
+  width: 40px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.dropdown__button__Setting p {
+  font-size: 27px;
+  font-family: 'Ageo-ExtraBold';
+  color: white;
+}
+
+.dropdown__setting::-webkit-scrollbar-track
+{
+	background-color: #0a0002;
+  /* height: 98%; */
+}
+
+.dropdown__setting::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #0a0002;
+}
+
+.dropdown__setting::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 10px;
+  /* height: 98%; */
+}
+
+.transactionExchange__button__exchange {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactionExchange__button__exchange button {
+  border: none;
+  color: #3d100c;
+  font-size: 23px;
+  font-family: 'Ageo-ExtraBold';
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+.transactionExchange__button__exchange p {
+  color: #ecb55c;
+  font-size: 17px;
+  font-family: 'Ageo-Medium';
+  margin-bottom: 0;
+}
+
+.transactionExchange__button__exchange h5 {
+  color: white;
+  font-size: 17px;
+  font-family: 'Ageo-Medium';
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.exchangeImage__setting {
+  padding-top: 220px;
+}
+
+.transactions__detail__subcontainer {
+  margin: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactions__subcontainer__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(90deg, #ac0e0d 0%, #320717 100%);
+  border-radius: 25px;
+}
+
+.transactions__subcontainer__title p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Ageo-ExtraBold';
+  margin-left: 30px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.transactions__subcontainer__title h5 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Ageo-ExtraBold';
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.transactions__subcontainer__title h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Ageo-ExtraBold';
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 90px;
+}
+
+.transactions__subcontainer__main {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+  height: 600px;
+}
+
+
+.transactions__subcontainer__main::-webkit-scrollbar-track
+{
+	background-color: #0a0002;
+  /* height: 98%; */
+}
+
+.transactions__subcontainer__main::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #0a0002;
+}
+
+.transactions__subcontainer__main::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 10px;
+  /* height: 98%; */
+}
+
+.buyCryptoImage__setting {
+  padding-top: 270px;
+}
+
+.buyCrypto__button__exchange {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyCrypto__button__exchange button {
+  border: none;
+  color: #3d100c;
+  font-size: 23px;
+  font-family: 'Ageo-ExtraBold';
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buyCrypto__button__exchange p {
+  color: #ecb55c;
+  font-size: 17px;
+  font-family: 'Ageo-Medium';
+  margin-bottom: 0;
+}
+
+.buyCrypto__button__exchange h5 {
+  color: white;
+  font-size: 17px;
+  font-family: 'Ageo-Medium';
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

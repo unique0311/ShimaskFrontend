@@ -1,0 +1,329 @@
+.dashboard {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+}
+
+.dashboard__left__container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color:aqua; */
+}
+
+.dashboard__outlet {
+  width: 78%;
+  height: 96%;
+}
+
+
+.dashboard__right__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right__container__navbar {
+  height: 25%;
+  width: 100%;
+  /* background-color: beige; */
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.right__container__main {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  /* margin-bottom: 25px; */
+}
+
+.right__container__main__exchange {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.left__container__button {
+  width: 80%;
+  height: 100%;
+  /* opacity: 0.8;
+  background-size: 100% 100%; */
+  background: linear-gradient(179.24deg, #e7ad878f 0%, #c7163a 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 10%;
+  margin-top: 30%;
+  margin-bottom: 10%;
+  border-radius: 25px;
+  position: relative;
+}
+
+.logo__setting {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -95px;
+}
+
+.container__navbar__back {
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(89.24deg, #b40403 0%, #0a0002 100%);
+  box-shadow:  30 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__info {
+  width: 50px;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+  background: #4c0000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.info__detail {
+  font-size: 25px;
+  font-family: 'Ageo-ExtraBold';
+  color: #ce2c1b;
+  transform: rotate(270deg);
+}
+
+.navbar__infos {
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-left: 120px; */
+}
+
+.infos__date {
+  display: flex;
+  flex-direction: row;
+  /* padding-right: 40px; */
+  padding-left: 80px;
+}
+
+.img__setting {
+  width: 60px;
+  height: 70px
+}
+
+.date__text__part {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date__text__part p {
+  font-size: 29px;
+  font-family: 'Ageo-ExtraBold';
+  color: white;
+  margin: 0;
+}
+
+.date__text__part pp {
+  font-size: 14px;
+  font-family: 'Ageo-Regular';
+  color: #ecb55c;
+}
+
+.balance__text__part {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.balance__text__part p {
+  font-size: 17px;
+  font-family: 'Ageo-Bold';
+  color: #ecb55c;
+  margin: 0;
+}
+
+.balance__text__part pp {
+  font-size: 20px;
+  font-family: 'Ageo-ExtraBold';
+  color: white;
+}
+
+.balance__text__part ppp {
+  font-size: 14px;
+  font-family: 'Ageo-Regular';
+  color: #ecb55c;
+}
+
+.profile__setting {
+  width: 200px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 80px;
+  background: linear-gradient(120.24deg, #380008 0%, #270008 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile__setting p {
+  font-size: 25px;
+  font-family: 'Ageo-Extrabold';
+  color: white;
+}
+
+.avatar__setting {
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profiledown__image__setting {
+  width: 22px;
+  padding-left: 20px;
+}
+
+
+.dashboardMain__left {
+  width: 68%;
+  height: 100%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardMain__right {
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(120.24deg, #812a4a 0%, #3d3551 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+}
+
+.left__balance__market {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 55%;
+  padding-bottom: 3%;
+}
+
+.left__balance {
+  width: 48.5%;
+  height: 100%;
+  background: linear-gradient(89.24deg, #d43f38 0%, #b5203f 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  align-items: center;
+  margin-right: 3%;
+  display: flex;
+}
+
+.left__market {
+  width: 48.5%;
+  height: 100%;
+  background: linear-gradient(89.24deg, #d43f38 0%, #b5203f 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+}
+
+.left__priceChart {
+  width: 100%;
+  height: 42%;
+  background: linear-gradient(89.24deg, #b40403 0%, #0a0002 100%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  /* align-items: center; */
+  display: flex;
+}
+
+.trend__chart__detail {
+  width: 90%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chart__filter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: -30px;
+}
+
+.balance__title {
+  width: 50px;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+  background: #a90c0d;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  font-family: 'Ageo-ExtraBold';
+  color: #ce2c1b;
+}
+
+.balance__title__name {
+  transform: rotate(270deg);
+}
+
+.transaction__title {
+  width: 50px;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+  background: #3d0615;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  font-family: 'Ageo-ExtraBold';
+  color: #ce2c1b;
+}
+
+.balance__detail {
+  width: 90%;
+  height: 90%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.show__all__com {
+  color: white;
+  font-size: 12px;
+  font-family: 'Ageo-SemiBold';
+  display: flex;    
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.showAllImage__Setting {
+  width: 7px;
+  padding-left: 8px;
+}
+
+.transaction__component {
+  display: flex;
+  flex-direction: column;
+}

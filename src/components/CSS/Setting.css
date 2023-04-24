@@ -1,0 +1,78 @@
+.setting__main__container {
+  width: 100%;
+  height: 100%;
+  /* background: wheat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setting__submain__container {
+  margin-top: 120px;
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  /* background: white; */
+}
+
+.setting__main__background {
+  width: 100%;
+  height: calc(100% - 70px);
+  background: linear-gradient(90deg, #830201 0%, #010103 100%);
+  border-radius: 0px 0px 25px 25px;
+}
+
+.setting__button__main {
+  width: calc(100% / 6);
+  height: 70px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 24px;
+  font-family: 'Ageo-Bold';
+}
+
+.button__container__membership {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__membership {
+  background: linear-gradient(125deg, #830201 0%, #6a0101 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__currencies {
+  background: linear-gradient(40deg, #6a0101 0%, #4b0001 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__buyShimask {
+  background: linear-gradient(40deg, #4b0001 0%, #2f0001 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__security {
+  background: linear-gradient(40deg, #2f0001 0%, #1b0002 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__privateKeys {
+  background: linear-gradient(40deg, #1b0002 0%, #100002 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__button__selected__support {
+  background: linear-gradient(40deg, #100002 0%, #0b0002 150%);
+  border-radius: 25px 25px 0 0;
+}
+
+.setting__membership__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
