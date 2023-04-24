@@ -97,7 +97,7 @@ const DashboardMain = () => {
                     Show All
                     <img src={showAllImage} className='showAllImage__Setting' />
                   </div>
-                  <div>
+                  <div className='show__coin__container'>
                     <BTCCoin />
                     <ETHCoin />
                     <BNBCoin />
@@ -117,7 +117,7 @@ const DashboardMain = () => {
                   <TrendChartFilter />
                 </div>
                 {/* Chart */}
-                <img src={MarketChartImage} style = {{paddingTop: '30px'}}/>
+                <img src={MarketChartImage} />
               </div>
             </div>
           </div>

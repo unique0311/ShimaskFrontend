@@ -33,7 +33,7 @@ const Dashboard = () => {
         <div className='left__container__button'>
           <MainButton />
           <div className='logo__setting'>
-            <img src={Logo} style={{width: '150px'}}/>
+            <img src={Logo} />
           </div>
         </div>
       </div>
