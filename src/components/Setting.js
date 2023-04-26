@@ -97,7 +97,7 @@ const Setting = () => {
                   </button>
                 </div>
               </div>
-              <img src={fromToImage} className="buyCryptoImage__setting"/>
+              <img src={fromToImage} className="buyShimaskImage__setting"/>
               <div className="buyShimask__detail__subMains">
                 <img src={smaskImage}/>
                 <h5>To</h5>
@@ -189,12 +189,12 @@ const Setting = () => {
   return (
     <div className="setting__main__container">
       <div className='setting__submain__container'>
-        <div className={`${selected === 'membership' ? 'button__container__membership' : ''}`}>
+        <div className={`${selected === 'membership' ? 'button__container__membership' : `${selected === 'currencies' ? 'button__container__currencies': `${selected === 'buyShimask' ? 'button__container__buyShimask' : `${selected === 'security' ? 'button__container__security' : `${selected === 'privateKeys' ? 'button__container__privateKeys' : `${selected === 'support' ? 'button__container__support' : ''}`}`}`}`}`}`}>
           <button onClick={() => setSelected('membership')} className={`setting__button__main ${selected === 'membership' ? 'setting__button__selected__membership' : ''}`}>Membership</button>
           <button onClick={() => setSelected('currencies')} className={`setting__button__main ${selected === 'currencies' ? 'setting__button__selected__currencies' : ''}`}>Currencies</button>
-          <button onClick={() => setSelected('buyShimask')} className={`setting__button__main ${selected === 'buyShimask' ? 'setting__button__selected__buyShimask' : ''}`}>Buy Shimask</button>
+          <button onClick={() => setSelected('buyShimask')} className={`setting__button__main ${selected === 'buyShimask' ? 'setting__button__selected__buyShimask' : ''}`}>Buy&nbsp;Shimask</button>
           <button onClick={() => setSelected('security')} className={`setting__button__main ${selected === 'security' ? 'setting__button__selected__security' : ''}`}>Security</button>
-          <button onClick={() => setSelected('privateKeys')} className={`setting__button__main ${selected === 'privateKeys' ? 'setting__button__selected__privateKeys' : ''}`}>Private Keys</button>
+          <button onClick={() => setSelected('privateKeys')} className={`setting__button__main ${selected === 'privateKeys' ? 'setting__button__selected__privateKeys' : ''}`}>Private&nbsp;Keys</button>
           <button onClick={() => setSelected('support')} className={`setting__button__main ${selected === 'support' ? 'setting__button__selected__support' : ''}`}>Support</button>
         </div>
         {renderSelected()}

@@ -38,33 +38,58 @@
   border-radius: 25px 25px 0 0;
 }
 
+.button__container__currencies {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;  
+}
+
+.button__container__buyShimask {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;  
+}
+
+.button__container__security {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;  
+}
+
+.button__container__privateKeys {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;  
+}
+
+.button__container__support {
+  background: linear-gradient(140deg, #d94838 0%, #6f2749 100%);
+  border-radius: 25px 25px 0 0;  
+}
+
 .setting__button__selected__membership {
-  background: linear-gradient(125deg, #830201 0%, #6a0101 150%);
+  background: linear-gradient(90deg, #830201 0%, #6E0202 100%);
   border-radius: 25px 25px 0 0;
 }
 
 .setting__button__selected__currencies {
-  background: linear-gradient(40deg, #6a0101 0%, #4b0001 150%);
+  background: linear-gradient(90deg, #6D0202 0%, #580202 100%);
   border-radius: 25px 25px 0 0;
 }
 
 .setting__button__selected__buyShimask {
-  background: linear-gradient(40deg, #4b0001 0%, #2f0001 150%);
+  background: linear-gradient(90deg, #570101 0%, #430202 100%);
   border-radius: 25px 25px 0 0;
 }
 
 .setting__button__selected__security {
-  background: linear-gradient(40deg, #2f0001 0%, #1b0002 150%);
+  background: linear-gradient(90deg, #420202 0%, #2D0102 100%);
   border-radius: 25px 25px 0 0;
 }
 
 .setting__button__selected__privateKeys {
-  background: linear-gradient(40deg, #1b0002 0%, #100002 150%);
+  background: linear-gradient(90deg, #2C0203 0%, #170103 100%);
   border-radius: 25px 25px 0 0;
 }
 
 .setting__button__selected__support {
-  background: linear-gradient(40deg, #100002 0%, #0b0002 150%);
+  background: linear-gradient(90deg, #160102 0%, #010103 100%);
   border-radius: 25px 25px 0 0;
 }
 
@@ -377,4 +402,302 @@
 .exit__button__setting {
   width: 20px;
   padding-right: 10px;
+}
+
+@media (max-width: 1350px) {
+  .buyShimask__detail__main {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buyShimask__detail__subMains {
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+  }
+
+  .buyShimask__detail__subMains img {
+    height: 80px;
+    padding-left: 0;
+  }
+
+  .buyShimask__detail__subMains h5 {
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .buyShimask__main__input {
+    height: 50px;
+  }
+
+  .buyShimask__main__input input {
+    height: 40px;
+    width: 350px;
+  }
+
+  .buyShimask__button__setting {
+    width: 130px;
+    height: 50px;
+  }
+
+  .buyShimask__button__setting p {
+    font-size: 25px;
+  }
+
+  .buyShimaskImage__setting {
+    padding-top: 25px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .setting__button__main {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .setting__support__container h4 {
+    font-size: 30px;
+  }
+
+  .setting__support__container p {
+    font-size: 15px;
+  }
+
+  .setting__support__container h5 {
+    font-size: 13px;
+  }
+
+  .setting__support__container button {
+    bottom: 40px;
+  }
+
+  .setting__support__container h7 {
+    font-size: 17px;
+  }
+
+  .setting__privateKeys__container p {
+    font-size: 15px;
+  }
+
+  .setting__privateKeys__container input {
+    width: 530px;
+  }
+
+  .setting__privateKeys__container button {
+    font-size: 18px;
+  }
+
+  .setting__security__container p {
+    font-size: 12px;
+  }
+
+  .setting__security__container input {
+    height: 40px;
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .setting__security__container {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .setting__button__main {
+    height: 55px;
+    font-size: 15px;
+  }
+
+  .setting__main__background {
+    height: calc(1009% - 55px);
+  }
+
+  .setting__support__container h4 {
+    font-size: 28px;
+  }
+
+  .setting__support__container p {
+    font-size: 13px;
+  }
+
+  .support__social__container img {
+    width: 35px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .support__logCollection__container img {
+    height: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .setting__privateKeys__container p {
+    font-size: 13px;
+  }
+
+  .setting__privateKeys__container input {
+    width: 480px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .setting__privateKeys__container button {
+    font-size: 17px;
+  }
+
+  .buyShimask__detail__subMains {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .buyShimask__main__input input {
+    width: 250px;
+  }
+
+  .setting__membership__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+
+  .setting__membership__container::-webkit-scrollbar-track
+  {
+    background-color: #0a0002;
+    /* height: 98%; */
+  }
+
+  .setting__membership__container::-webkit-scrollbar
+  {
+    width: 6px;
+    background-color: #0a0002;
+  }
+
+  .setting__membership__container::-webkit-scrollbar-thumb
+  {
+    background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+    border-radius: 10px;
+    /* height: 98%; */
+  }
+
+}
+
+@media (max-width: 575px) {
+  .support__card__container {
+    flex-direction: column;
+  }
+
+  .card__detail__main {
+    flex-direction: row;
+    margin-top: 20px;
+    width: 240px;
+    height: 120px;
+    justify-content: flex-start;
+  }
+
+  .card__detail__main img {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+
+  .setting__submain__container {
+    margin-top: 40px;
+    height: calc(100% - 40px);
+  }
+
+  .setting__privateKeys__container p {
+    font-size: 10px;
+  }
+
+  .setting__privateKeys__container input {
+    width: 360px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .setting__privateKeys__container button {
+    font-size: 17px;
+  }
+
+  .setting__security__container input {
+    height: 40px;
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .buyShimask__detail__subMains {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .buyShimask__main__input input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .setting__button__main {
+    height: 40px;
+    font-size: 9px;
+  }
+
+  .setting__button__selected__support {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__button__selected__membership {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__button__selected__currencies {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__button__selected__buyShimask {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__button__selected__security {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__button__selected__privateKeys {
+    border-radius: 15px 15px 0 0;
+  }
+
+
+  .button__container__support {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .button__container__buyShimask {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .button__container__membership {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .button__container__currencies {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .button__container__security {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .setting__main__background {
+    height: calc(100% - 40px);
+  }
+
+  .setting__security__container p {
+    font-size: 9px;
+  }
+
+  .setting__security__container button {
+    font-size: 15px;
+  }
 }

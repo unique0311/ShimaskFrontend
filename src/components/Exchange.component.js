@@ -18,6 +18,7 @@ import toggleImage from '../assets/dashboard/toggleLeft.svg';
 import toggleRightImage from '../assets/dashboard/toggleRight.svg';
 import rightCrossImage from '../assets/dashboard/rightCross.svg';
 import dolorImage from '../assets/dashboard/dolor.svg';
+import coininfoImage from '../assets/dashboard/coinInfoChart.svg';
 
 export const ExchangeStatusInfo = ({title, price}) => {
   return (
@@ -36,7 +37,10 @@ export const ExchangeChartTitle = () => {
           <img src={searchImage} />
           <input placeholder='............' />
         </div>
-        <button className='search__button_setting'>Search</button>
+        <button className='search__button_setting'>
+          <img src={searchImage} />
+          <p>Search</p>
+        </button>
       </div>
       <div className='container__title__setting'>
         Balance
@@ -85,7 +89,7 @@ export const CoinMarketInfo = () => {
           <p>0.2%</p>
         </div>
       </div>
-      <img src={risingPriceImage} />
+      <img src={risingPriceImage}  className='rising__price__image'/>
     </div>
   )
 }
@@ -122,38 +126,40 @@ export const CoinList = () => {
       </div>
       <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h5>
       <div className='list__container__main'>
-        <div className='coin__list__container'>
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-          <PrettyCoin />
-        </div>
+        {/* <div className='coin__list__overflow'> */}
+          <div className='coin__list__container'>
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+            <PrettyCoin />
+          </div>
+        {/* </div> */}
       </div>
     </div>
   )
@@ -247,6 +253,9 @@ export const CoinInfoMain = () => {
         <InfoPriceAndTransactionFilter />
       </div>
       {/* TODO */}
+      <div className='coininfo__overflow'>
+        <img src={coininfoImage} className='coininfo__chart__image'/>
+      </div>
     </div>
   )
 }

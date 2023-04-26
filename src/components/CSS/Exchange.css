@@ -106,7 +106,7 @@
   color: white;
   font-size: 32px;
   font-family: 'Ageo-Bold';
-  background: linear-gradient(30deg, #da4c37 0%, #b9273f 100%);
+  background: linear-gradient(90deg, #DA4C38 0%, #B2433F 100%);
 }
 
 .instantExchange__button__setting {
@@ -351,6 +351,7 @@
 .transactions__subcontainer__main::-webkit-scrollbar
 {
 	width: 6px;
+  height: 6px;
 	background-color: #0a0002;
 }
 
@@ -397,4 +398,209 @@
   font-family: 'Ageo-Medium';
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.coin__marketinfo__container {
+  width: 100%;
+  height: 450px;
+  overflow: auto;
+}
+
+.coin__marketinfo__container::-webkit-scrollbar-track
+{
+	background-color: #0a0002;
+  /* height: 98%; */
+}
+
+.coin__marketinfo__container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #0a0002;
+}
+
+.coin__marketinfo__container::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 10px;
+  /* height: 98%; */
+}
+
+@media (max-width: 790px) {
+  .exchange__statue__bar {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1720px) {
+  .exchange__main__input input {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .exchangemain__main {
+    margin-top: 40px;
+    height: calc(100% - 40px);
+  }
+
+  .transactions__button__setting {
+    font-size: 25px;
+  }
+
+  .instantExchange__button__setting {
+    font-size: 25px;
+  }
+
+  .instantExchange__detail__exchangeMain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bothside__detail__main {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .bothside__detail__main img {
+    width: 80px;
+    padding-left: 0;
+  }
+
+  .bothside__detail__main h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding-left: 0;
+  }
+
+  .exchangeImage__setting {
+    padding-top: 0;
+    width: 35px;
+  }
+
+  .dropdown__button__Setting img {
+    padding-left: 20px;
+    width: 40px;
+  }
+
+  .dropdown__button__Setting p {
+    font-size: 25px;
+  }
+
+  .transactions__detail__subcontainer {
+    margin: 20px 25px;
+  }
+
+  .transactions__subcontainer__main {
+    height: 700px;
+  }
+
+  .buyCryptoImage__setting {
+    padding-top: 25px;
+  }
+
+  .buyCrypto__button__exchange {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bothside__detail__main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bothside__detail__main h5 {
+    font-size: 22px;
+  }
+
+  .exchange__main__input {
+    height: 60px;
+  }
+
+  .exchange__main__input input {
+    width: 300px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  .transactions__detail__subcontainer {
+    margin: 20px 25px;
+  }
+
+  .transactions__subcontainer__title p {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  .transactions__subcontainer__title h5 {
+    font-size: 18px;
+  }
+
+  .transactions__subcontainer__title h4 {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+
+  .transactions__subcontainer__main {
+    height: 700px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .exchange__main__input input {
+    width: 250px;
+    padding-left: 25px;
+  }
+
+  .input__button__setting {
+    padding: 3px;
+  }
+
+  .input__button__setting p {
+    font-size: 25px;
+  }
+  
+  .transactions__detail__subcontainer {
+    margin: 20px 15px;
+  }
+
+  .transactions__detail__subcontainer p {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  .transactions__detail__subcontainer h5 {
+    font-size: 10px;
+  }
+
+  .transactions__detail__subcontainer h4 {
+    font-size: 10px;
+    margin-right: 20px;
+  }
+
+  .transactions__subcontainer__main {
+    height: 700px;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .exchange__main__input input {
+    width: 150px;
+  }
+
+  .instantExchange__button__setting {
+    font-size: 20px;
+  }
+
+  .transactions__button__setting {
+    font-size: 20px;
+  }
 }

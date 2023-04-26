@@ -157,7 +157,7 @@
   width: 210px;
 }
 
-.coinMarket__info__container img {
+.rising__price__image {
   width: 300px;
 }
 
@@ -301,10 +301,33 @@
   padding: 20px;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto;
   column-gap: 20px;
   row-gap: 20px;
 }
+
+/* .coin__list__overflow {
+  
+  overflow: auto;
+}
+
+.coin__list__overflow::-webkit-scrollbar-track
+{
+	background-color: #0a0002;
+}
+
+.coin__list__overflow::-webkit-scrollbar
+{
+	width: 6px;
+  height: 6px;
+	background-color: #0a0002;
+}
+
+.coin__list__overflow::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 10px;
+} */
 
 .pretty__coin__container {
   display: flex;
@@ -733,4 +756,711 @@
   color: #ecb55c;
   padding: 9.5px 19.5px;
   box-shadow: none;
+}
+
+.search__button_setting img {
+  display: none;
+}
+
+.search__button_setting p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.coininfo__chart__image {
+  padding-top: 150px;
+}
+
+.coininfo__overflow {
+  width: 100%;
+  overflow: auto;
+}
+
+.coininfo__overflow::-webkit-scrollbar-track
+{
+	background-color: #0a0002;
+}
+
+.coininfo__overflow::-webkit-scrollbar
+{
+	width: 6px;
+  height: 6px;
+	background-color: #0a0002;
+}
+
+.coininfo__overflow::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(180deg, #e6b666 0%, #a4682d 100%);
+  border-radius: 10px;
+}
+
+@media (max-width: 1460px) {
+  .exchange__status__container {
+    padding-left: 5%;
+  }
+
+  .coinMarket__title {
+    width: 360px;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 210px;
+  }
+
+  .coinMarket__info__container h4 {
+    width: 185px;
+  }
+
+  .coinMarket__price {
+    width: 185px;
+  }
+
+  .modal__main__container {
+    left: 50%;
+  }
+}
+
+@media (max-width: 1296px) {
+  .exchange__status__container {
+    padding-right: 6%;
+  }
+
+  .coinMarket__title {
+    width: 295px;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 190px;
+  }
+
+  .coinMarket__info__container h4 {
+    width: 150px;
+  }
+
+  .coinMarket__price {
+    width: 165px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .exchange__status__container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .chart__container__search {
+    width: 20%;
+    height: 45px;
+  }
+
+  .search__container input {
+    width: 80px;
+  }
+
+  .search__button_setting {
+    height: 40px;
+    width: 90px;
+    font-size: 17px;
+  }
+
+  .container__title__setting {
+    font-size: 17px;
+    padding-right: 35px;
+  }
+
+  .coinMarket__title {
+    width: 250px;
+  }
+
+  .coinMarket__title img {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .coinMarket__title p {
+    font-size: 16px;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 170px;
+    font-size: 16px;
+  }
+
+  .coinMarket__info__container h4 {
+    font-size: 16px;
+  }
+
+  .coinMarket__info__container p {
+    font-size: 16px;
+  }
+
+  .price__badge {
+    width: 40px;
+    height: 15px;
+    left: 70px;
+  }
+
+  .price__badge img {
+    width: 7px;
+    height: 7px;
+    padding-right: 3px;
+    padding-left: 7px;
+  }
+
+  .price__badge p {
+    font-size: 8px;
+  }
+
+  .coinMarket__price {
+    width: 130px;
+  }
+}
+
+@media (max-width: 920px) {
+  .transactions__main__sent {
+    width: 240px;
+  }
+
+  .transactions__main__receive {
+    width: 360px;
+  }
+
+  .transactions__main__dateandtime {
+    width: 170px;
+  }
+
+  .transactions__submain__container {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 905px) {
+  .exchange__status__container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .chart__container__search {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .search__container input {
+    width: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  .search__container img {
+    display: none;
+  }
+
+  .search__button_setting {
+    background: none;
+    height: 25px;
+    width: 25px;
+  }
+
+  .search__button_setting img {
+    display: flex;
+    width: 15px;
+  }
+  .search__button_setting p {
+    display: none;
+  }
+
+  .container__title__setting img {
+    width: 5px;
+    padding-left: 5px;
+  }
+
+  .container__title__setting {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+
+  .button__exchange__setting {
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+
+  .button__exchange__setting img {
+    width: 15px;
+  }
+
+  .coinMarket__title {
+    width: 150px;
+  }
+
+  .coinMarket__title img {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 30px;
+  }
+
+  .coinMarket__info__container p {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 135px;
+    font-size: 12px;
+  }
+
+  .coinMarket__info__container h4 {
+    font-size: 12px;
+    width: 120px;
+  }
+
+  .coinMarket__price {
+    width: 130px;
+  }
+
+  .price__badge {
+    width: 42px;
+    height: 15px;
+    left: 50px;
+  }
+
+  .price__badge img {
+    width: 5px;
+    height: 5px;
+    padding-right: 2px;
+    padding-left: 5px;
+  }
+
+  .rising__price__image {
+    width: 200px;
+  }
+}
+
+@media (max-width: 790px) {
+  .exchange__status__container {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+  }
+
+  .exchange__status__container h5 {
+    font-size: 14px;
+  }
+
+  .exchange__status__container p {
+    font-size: 20px;
+  }
+
+  .modal__container__title {
+    font-size: 25px;
+  }
+
+  .modal__container__main {
+    margin: 15px 20px;
+  }
+
+  .modal__main__exchange {
+    margin-top: 25px;
+  }
+
+  .modal__exchange__sent img {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 45px;
+  }
+
+  .modal__sent__details p {
+    font-size: 12px;
+  }
+
+  .modal__sent__details h5 {
+    font-size: 12px;
+  }
+
+  .modal__exchange__image {
+    width: 20px;
+  }
+
+  .modal__container__address {
+    margin-top: 15px;
+  }
+
+  .modal__address__details h5 {
+    font-size: 10px;
+  }
+
+  .modal__address__details p {
+    font-size: 12px;
+  }
+
+  .modal__container__button {
+    margin-top: 50px;
+  }
+
+  .modal__container__button button {
+    font-size: 11px;
+    padding: 10px 10px;
+  }
+
+  .modal__container__button button:hover {
+    padding: 9.5px 9.5px;
+  }
+
+  .modal__main__container {
+    width: 430px;
+    height: 510px;
+  }
+
+
+}
+
+@media (max-width: 749px) {
+  .exchange__status__container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media (max-width: 705px) {
+  .exchange__status__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .coinMarket__title {
+    width: 110px;
+  }
+
+  .coinMarket__title img {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25px;
+  }
+
+  .coinMarket__info__container p {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 155px;
+    font-size: 10px;
+  }
+
+  .coinMarket__info__container h4 {
+    font-size: 10px;
+    width: 120px;
+  }
+
+  .coinMarket__price {
+    width: 120px;
+  }
+
+  .price__badge {
+    width: 35px;
+    left: 45px;
+    height: 15px;
+  }
+
+  .price__badge img {
+    width: 5px;
+    height: 5px;
+    padding-right: 1px;
+    padding-left: 3px;
+  }
+
+  .rising__price__image {
+    width: 180px;
+  }
+}
+
+@media (max-width: 575px) {
+  .exchange__status__container {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .exchange__status__container h5 {
+    font-size: 12px;
+  }
+
+  .exchange__status__container p {
+    font-size: 18px;
+  }
+
+  .rising__price__image {
+    width: 170px;
+  }
+
+  .price__badge p {
+    display: none;
+  }
+
+  .price__badge {
+    width: 15px;
+  }
+
+  .price__badge img {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  .coininfo__title__container {
+    padding-top: 40px;
+  }
+
+  .coininfo__title__left {
+    padding-right: 40px;
+  }
+
+  .coininfo__title__left img {
+    width: 100px;
+    padding-right: 20px;
+  }
+
+  .title__container__coininfo h1 {
+    font-size: 40px;
+  }
+
+  .title__container__coininfo h5 {
+    font-size: 25px;
+  }
+
+  .title__container__coininfo p {
+    font-size: 18px;
+  }
+
+  .coininfo__button__setting {
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .ChartDate__filter {
+    height: 40px;
+  }
+
+  .ChartDate__button__setting {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ChartDate__selected {
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .price__button__setting {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .exchangemain__button__container {
+    height: 60px;
+  }
+
+  .transactions__main__sent {
+    width: 160px;
+  }
+
+  .transactions__main__sent img {
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
+  .transactions__main__sent p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .transactions__main__receive {
+    width: 260px;
+  }
+
+  .transactions__main__receive img {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .transactions__main__receive p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .transactions__main__dateandtime {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .transactions__submain__container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .exchange__status__container {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .exchange__status__container h5 {
+    font-size: 9px;
+  }
+
+  .exchange__status__container p {
+    font-size: 12px;
+  }
+
+  .chart__container__search {
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+  }
+
+  .search__container input {
+    width: 20px;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+
+  .search__button_setting {
+    height: 20px;
+    width: 20px;
+  }
+
+  .search__button_setting img {
+    width: 15px;
+  }
+
+  .container__title__setting {
+    font-size: 12px;
+    padding-right: 0px;
+  }
+
+  .container__title__setting img {
+    width: 4px;
+    padding-left: 1px;
+  }
+
+  .button__exchange__setting {
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+
+  .button__exchange__setting img {
+    width: 13px;
+  }
+
+  .coinMarket__title {
+    width: 40px;
+  }
+
+  .coinMarket__title img {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25px;
+  }
+
+  .coinMarket__title p {
+    display: none;
+  }
+
+  .coinMarket__info__container h5 {
+    width: 90px;
+    font-size: 9px;
+  }
+
+  .coinMarket__info__container h4 {
+    font-size: 9px;
+    width: 50px;
+  }
+
+  .coinMarket__price {
+    width: 50px;
+  }
+
+  .price__badge {
+    width: 10px;
+    height: 10px;
+    left: 35px;
+    top: -10px;
+  }
+
+  .price__badge img {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .rising__price__image {
+    width: 85px;
+  }
+}
+
+
+@media (max-width: 475px) {
+  .coininfo__title__left {
+    padding-right: 40px;
+  }
+
+  .coininfo__title__left img {
+    width: 80px;
+    padding-right: 20px;
+  }
+
+  .title__container__coininfo h1 {
+    font-size: 30px;
+  }
+
+  .title__container__coininfo h5 {
+    font-size: 20px;
+  }
+
+  .title__container__coininfo p {
+    font-size: 15px;
+  }
+
+  .coininfo__button__setting {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .chart__date__filter__setting {
+    left: 15px;
+  }
+
+  .ChartDate__filter {
+    height: 35px;
+  }
+
+  .ChartDate__button__setting {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .price__button__setting {
+    font-size: 10px;
+  }
+
+  .price__transaction__setting {
+    right: 15px;
+  }
 }

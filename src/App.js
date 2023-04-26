@@ -18,7 +18,7 @@ function App() {
       <Router>
         <main>
           <Routes>
-            <Route exact path='/' element={<>Root</>}/>
+            <Route exact path='/' element={<>Login/SignUp page. Redirect http://localhost:3000/main/dashboard</>}/>
             <Route exact path="main" element={<Dashboard />}>
               <Route exact path="dashboard" element={<DashboardMain />}/>
               <Route exact path="exchange" element={<Exchange />} />

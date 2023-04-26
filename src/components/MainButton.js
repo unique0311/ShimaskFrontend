@@ -13,6 +13,7 @@ import stakingUnselectedImage from '../assets/dashboard/stakingUnselected.svg';
 import tradingUnselectedImage from '../assets/dashboard/tradingUnselected.svg';
 import settingUnselectedImage from '../assets/dashboard/settingUnselected.svg';
 import settingSelectedImage from '../assets/dashboard/settingSelected.svg';
+import Logo from '../assets/dashboard/logo.svg';
 
 const MainButton = () => {
   
@@ -22,6 +23,7 @@ const MainButton = () => {
   },[])
   return (
     <div className='mainButton'>
+      <img src={Logo} className='hamburger__logo'/>
       <Link to="/main/dashboard" onClick={() => setCurrentPage('dashboard')} className={`button__setting ${currentPage === 'dashboard'? 'seleted': '' }`} >
         <img src={currentPage === 'dashboard' ? dashboardSelectedImage : dashboardUnselectImage}  className='image__button__setting'/>
         <p className={`button__text ${currentPage === 'dashboard' ? 'colorSelected': ''}`}>DASHBOARD</p>

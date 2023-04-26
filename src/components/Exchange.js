@@ -63,7 +63,10 @@ const Exchange = () => {
         <div className='coin__price__chart'>
           <div className='price__chart__detail'>
             <ExchangeChartTitle />
-            <div>
+            <div className='coin__marketinfo__container'>
+              <CoinMarketInfo />
+              <CoinMarketInfo />
+              <CoinMarketInfo />
               <CoinMarketInfo />
               <CoinMarketInfo />
               <CoinMarketInfo />

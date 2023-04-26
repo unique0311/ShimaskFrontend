@@ -4,7 +4,7 @@ import MainButton from './MainButton';
 import background from '../assets/dashboard/Background.png';
 // import sidebar from '../assets/dashboard/1.png';
 import Logo from '../assets/dashboard/logo.svg';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet,useParams  } from 'react-router-dom';
 import DashboardMain from "./DashBoardMain";
 import Exchange from "./Exchange";
@@ -12,6 +12,12 @@ import BuyCrypto from "./BuyCrypto";
 import AddCoinAndToken from './AddCoinAndToken';
 
 const Dashboard = () => {
+  const [sideToggle, setSideToggle] = useState(false);
+
+  const setSideHamburgerToggle = () => {
+    setSideToggle(!sideToggle);
+  }
+
   
   // const page = useParams().page;
   // let child = null;
@@ -37,9 +43,26 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className='dashboard__outlet'>
+      <div className='dashboard__outlet'> 
+        <div className='hamburger__menu' onClick={() => setSideHamburgerToggle()}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         {/* {child} */}
         <Outlet />
+      </div>
+
+      <div className={`backdrop ${!sideToggle ? 'showmenu' : 'hiddenmenu'}`} onClick={() => setSideHamburgerToggle(false)}/>
+      <div className={`sidedrawer ${sideToggle ? 'showmenu' : 'hiddenmenu'}`} onClick={() => setSideHamburgerToggle}>
+        <div className='main__left__container__menu'>
+          {/* <div className='left__container__logo__menu'>
+            <img src={Logo} className="logo__setting" />
+          </div> */}
+          <div className='left__container__buttons__menu'>
+            <MainButton />
+          </div>
+        </div>
       </div>
     </div>
   )

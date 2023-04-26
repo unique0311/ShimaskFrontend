@@ -269,7 +269,7 @@
 }
 
 .trend__chart__detail img {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .trend__chart__detail{
@@ -365,6 +365,29 @@
   /* height: 98%; */
 }
 
+.hamburger__menu {
+
+  width: 25px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.hamburger__menu > div {
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+
+.left__container__buttons__menu {
+  width: 100%;
+  display: none;
+}
 
 @media (max-width: 1620px) {
   .dashboard__left__container {
@@ -577,4 +600,105 @@
     width: 35px;
   }
 
+}
+
+@media (max-width: 575px) {
+  .hamburger__menu {
+    display: flex;
+  }
+
+  .dashboard__left__container {
+    display: none;
+  }
+
+  .dashboard__outlet {
+    width: 98%;
+    height: 92%;
+    margin-left: 10px;
+  }
+
+  .backdrop {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .backdrop.showmenu {
+    display: none;
+  }
+
+  .sidedrawer {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    background:  linear-gradient(179.24deg, #e7ad87 0%, #c7163a 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+  }
+
+  .sidedrawer.showmenu {
+    transform: translateX(0);
+  }
+  
+  .main__left__container__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .left__container__buttons__menu {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .date__text__part p {
+    font-size: 17px;
+  }
+
+  .date__text__part pp {
+    font-size: 8px;
+  }
+
+  .infos__date {
+    padding-left: 0;
+  }
+
+  .balance__text__part p {
+    font-size: 11px;
+  }
+
+  .balance__text__part pp {
+    font-size: 12px;
+  }
+
+  .balance__text__part ppp {
+    font-size: 8px;
+  }
+
+  .profile__setting {
+    width: 47px;
+    height: 55px;
+  }
+
+  .avatar__setting {
+    width: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .dashboard__outlet {
+    width: 96%;
+  }
 }
